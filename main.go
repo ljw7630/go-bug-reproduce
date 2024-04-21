@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type data struct {
 	a int
 	b int
@@ -17,9 +15,5 @@ func nilnil(a, b int) (*data, error) {
 func main() {
 	const a = 0
 	const b = 0
-	res, err := nilnil(a, b)
-	if err != nil {
-		fmt.Printf("err: %v\n", err)
-	}
-	fmt.Printf("res: %v\n", res)
+	_, _ = nilnil(a, b)
 }
